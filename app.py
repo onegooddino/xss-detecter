@@ -58,6 +58,3 @@ def handle_unauthorized(error):
     # Ensure we pass the error description to the template
     return render_template('error.html', message=error.description), 401
 
-if __name__ == '__main__':
-    # Change the port here (for example, to 8000)
-    app.run(debug=True, port=5051)

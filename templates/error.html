@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+{% autoescape true %}
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Request Denied - XSS</title>
+    <link rel="stylesheet" href="/static/style.css">
+  </head>
+
+  <body>
+
+    <!-- Header -->
+    <header>
+      <h1>Cross Site Scripting Protected</h1>
+      <p>Read, search and post comments</p>
+    </header>
+
+    <!-- Denied message -->
+    <div class="denied-message">
+      <h2>Your request was rejected</h2>
+      <p>Sorry, your request contains potential Cross Site Scripting and has been rejected for security reasons.</p>
+      <a href="{{ url_for('index') }}">Go back to the homepage</a>
+    </div>
+
+  </body>
+</html>
+{% endautoescape %}
